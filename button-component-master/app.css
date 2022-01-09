@@ -1,13 +1,22 @@
+*{
+  box-sizing: border-box;
+}
 .buttons{
   display: flex;
- 
   width: 140px;
   height: auto;
   flex-wrap: wrap;
 }
+
+svg {
+  margin: 0 8px;
+}
 /* default buttons */
 .btn {
-  width: 100%;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  width: max-content;
   margin: 5px 10px;
   background-color: rgba(224, 224, 224, 1);
   border: 0;
@@ -70,3 +79,63 @@
   box-shadow: none;
 }
 /* button disabled  */
+
+/* button icon */
+.button-with-svg {
+  background: rgba(61, 90, 254, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.button-with-svg:hover, .button-with-svg:focus{
+  background-color: rgba(41, 98, 255, 0.1);
+  color: rgba(61, 90, 254, 1);
+}
+/* button icon */
+
+/* button sizes */
+.sm {
+  height: 32px;
+}
+.md {
+  height: 36px;
+}
+.lg{
+  height: 42px;
+}
+.sz{
+  background: rgba(61, 90, 254, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.sz:hover, .sz:focus{
+  background-color: rgba(41, 98, 255, 0.1);
+  color: rgba(61, 90, 254, 1);
+}
+/* button sizes */
+
+/* type buttons */
+.primary {
+  background-color: rgba(41, 98, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.primary:hover, .primary:focus {
+  background-color: rgba(0, 57, 203, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.secondary {
+  background-color: rgba(69, 90, 100, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.secondary:hover, .secondary:focus {
+  background-color: rgba(28, 49, 58, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.danger {
+  background-color: rgba(211, 47, 47, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.danger:hover, .danger:focus {
+  background-color: rgba(154, 0, 7, 1);
+  color: rgba(255, 255, 255, 1);
+}
+/* type buttons */
